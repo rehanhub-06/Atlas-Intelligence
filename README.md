@@ -1,6 +1,6 @@
 # GraphOne (Atlas Intelligence) Pipeline & Telemetry Dashboard
 
-![Dashboard Overview](C:\Users\rehan\.gemini\antigravity\brain\af86af33-8ded-4dbb-8f9f-921739febdc3\media__1782323562546.png)
+![Dashboard Overview](docs/images/media__1782323562546.png)
 
 A robust, production-grade intelligence pipeline that aggregates, enriches, and resolves entities across AI startups, products, research papers, fresh jobs, and news signals. Powered by LiteLLM (Gemini Flash / Llama 3 / DeepSeek) and strict Pydantic contracts, it enforces semantic deduplication and entity resolution at the edge.
 
@@ -22,35 +22,35 @@ A robust, production-grade intelligence pipeline that aggregates, enriches, and 
 
 ### Vertical Data Browser (Multi-Source Operations)
 Monitor real-time ingestion health across all targeted verticals.
-![Vertical Data Browser](C:\Users\rehan\.gemini\antigravity\brain\af86af33-8ded-4dbb-8f9f-921739febdc3\media__1782323628012.png)
+![Vertical Data Browser](docs/images/media__1782323628012.png)
 
 ### Real-Time Signal Ingestion (News & Jobs)
 Automatically tracks LLM extraction methods, confidence scores, and raw payloads.
-![News Stream](C:\Users\rehan\.gemini\antigravity\brain\af86af33-8ded-4dbb-8f9f-921739febdc3\media__1782323751797.png)
+![News Stream](docs/images/media__1782323751797.png)
 
 ### Semantic Entity Resolution Engine
 Resolves messy company names into canonical startup targets using exact, fuzzy, and embedding matches.
-![Entity Resolution Logs](C:\Users\rehan\.gemini\antigravity\brain\af86af33-8ded-4dbb-8f9f-921739febdc3\media__1782323786054.png)
+![Entity Resolution Logs](docs/images/media__1782323786054.png)
 
 ### Dead-Letter Queue (DLQ) & Traceability
 Safely isolates unresolvable entities without hallucinating, keeping the primary database clean.
-![Unresolved Entity Logs](C:\Users\rehan\.gemini\antigravity\brain\af86af33-8ded-4dbb-8f9f-921739febdc3\media__1782323808651.png)
+![Unresolved Entity Logs](docs/images/media__1782323808651.png)
 
 ### Freshness SLA & Compliance
 Continuously validates that jobs and news remain under a strict 24-hour freshness window.
-![Freshness Check](C:\Users\rehan\.gemini\antigravity\brain\af86af33-8ded-4dbb-8f9f-921739febdc3\media__1782324266591.png)
+![Freshness Check](docs/images/media__1782324266591.png)
 
 ### LLM Orchestration & Telemetry
 Deep dive into the extraction engine's fallback executions, rate limit protections, and model utilization efficiency.
-![LLM Telemetry](C:\Users\rehan\.gemini\antigravity\brain\af86af33-8ded-4dbb-8f9f-921739febdc3\media__1782324266620.png)
+![LLM Telemetry](docs/images/media__1782324266620.png)
 
 ### Source-to-Output Traceability
 Audit the complete lifecycle of any record from its raw HTML/JSON origin to the final extracted structured payload.
-![Traceability](C:\Users\rehan\.gemini\antigravity\brain\af86af33-8ded-4dbb-8f9f-921739febdc3\media__1782324266624.png)
+![Traceability](docs/images/media__1782324266624.png)
 
 ---
 
-## 🚀 Setup & Installation
+## Setup & Installation
 
 ### 1. Environment Configuration
 Install required Python dependencies:
@@ -83,7 +83,7 @@ SHEET_ID=your_sheet_id
 
 ---
 
-## ⚙️ Ingestion Orchestration
+## Ingestion Orchestration
 
 Execute the pipeline using the primary orchestrator. Every run is **fully idempotent**; existing records are checked against a local `seen_content` cache to prevent redundant LLM billing and duplicates.
 
@@ -100,7 +100,7 @@ python src/main.py --vertical news --limit 50
 
 ---
 
-## 📊 Streaming Monitoring Dashboard
+## Streaming Monitoring Dashboard
 
 Review database tables, track entity resolution methodologies, monitor freshness compliance, and view LLM telemetry cost-savings in real-time.
 
@@ -111,7 +111,7 @@ streamlit run src/dashboard/app.py
 
 ---
 
-## 📈 Scalability
+## Scalability
 
 The current implementation can scale substantially through vertical scaling and asynchronous processing. For large-scale distributed ingestion workloads (500k+ entities), PostgreSQL and distributed worker orchestration are recommended.
 
@@ -119,7 +119,7 @@ However, scaling horizontally (distributing processing across multiple Kubernete
 
 ---
 
-## 🏗️ Architecture Overview
+## Architecture Overview
 
 The pipeline leverages a multi-tier structure designed for resilience, automated enrichment, and strict traceability.
 
