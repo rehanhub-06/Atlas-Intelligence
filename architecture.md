@@ -68,7 +68,7 @@ Structuring raw text/HTML into schemas relies on a combination of context-window
                        Tier 3: DeepSeek-Chat / OpenRouter (Cost Efficient)
                               │ (If All Fail)
                               ▼
-                       Tier 4: Regex-based Rule Extractor (Guaranteed Fallback)
+                       Dead-Letter Queue (DLQ) Exception
 ```
 
 ### Rate Limit (429) & Window Size (413) Strategies:
