@@ -1,0 +1,41 @@
+# Environments
+.env
+.venv/
+venv/
+env/
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Secrets
+graphone-*.json
+service_account.json
+creds/
+
+# Databases
+*.db
+*.sqlite
+*.sqlite3
+
+# Generated data (keeping CSVs tracked as requested)
+# data/ (uncomment if you want to ignore the whole folder)
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# IDE
+.idea/
+.vscode/
+
+# Logs
+*.log
+
+# Streamlit
+.streamlit/secrets.toml
+
+# OS
+.DS_Store
+Thumbs.db

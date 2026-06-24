@@ -1,0 +1,16 @@
+httpx
+aiohttp
+playwright
+beautifulsoup4
+dateparser
+arxiv
+litellm
+pydantic
+rapidfuzz
+sentence-transformers
+gspread
+oauth2client
+streamlit
+pandas
+feedparser
+python-dotenv
