@@ -6,7 +6,7 @@ A robust, production-grade intelligence pipeline that aggregates, enriches, and 
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Orchestration & Routing**: Python (Asyncio), LiteLLM, Tenacity
 - **Data Validation**: Pydantic
@@ -18,7 +18,7 @@ A robust, production-grade intelligence pipeline that aggregates, enriches, and 
 
 ---
 
-## 📸 Platform Showcase
+## Platform Showcase
 
 ### Vertical Data Browser (Multi-Source Operations)
 Monitor real-time ingestion health across all targeted verticals.
